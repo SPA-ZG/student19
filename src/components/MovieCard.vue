@@ -4,7 +4,7 @@
       <p :class="getRatingClass">{{ formattedRating }}</p>
       <div class="media-container">
         <img :src="getMoviePosterUrl(movie.poster_path)" :alt="movie.title" />
-        <iframe v-if="trailerUrl" :src="trailerUrl" width="560" height="315" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
       </div>
       <p>{{ movie.overview }}</p>
     </div>
@@ -44,18 +44,9 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: #ccc8c898; /* light grey background */
+  background-color: #ccc8c898;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.media-container {
-  display: flex;
-  gap: 15%;
-  flex-direction: row;
-  width: 80%; /* Adjust as needed */
-  height: auto; /* Adjust as needed */
-  margin: auto; /* Center the container */
 }
 
 h2 {

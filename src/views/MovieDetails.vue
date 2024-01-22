@@ -34,66 +34,8 @@ const fetchMovieDetails = async () => {
   }
 }
 
-
-
-
-
-
-
 onMounted(() => {
   fetchMovieDetails()
 })
 </script>
 
-
-<style scoped>
-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  background-color: #ccc8c898; /* light grey background */
-  border-radius: 15px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.media-container {
-  display: flex;
-  gap: 15%;
-  flex-direction: row;
-  width: 80%; /* Adjust as needed */
-  height: auto; /* Adjust as needed */
-  margin: auto; /* Center the container */
-}
-
-h2 {
-  margin-bottom: 5px;
-  color: #333;
-  font-size: 2em;
-}
-
-img {
-  width: 300px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-p {
-  margin-top: 30px;
-  text-align: justify;
-  line-height: 1.6;
-}
-
-.high-rating {
-  color: green;
-}
-
-.medium-rating {
-  color: orange;
-}
-
-.low-rating {
-  color: red;
-}
-</style>

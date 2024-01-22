@@ -24,10 +24,10 @@ const routes = [
     component: SearchView
   },
   {
-    path: '/show/:id', // Define a route with a dynamic segment for the show ID
-    name: 'ShowDetails', // Name the route "ShowDetails"
-    component: ShowDetails, // Associate the route with the ShowDetails component
-    props: true // Enable passing of props via route parameters
+    path: '/show/:id', 
+    name: 'ShowDetails', 
+    component: ShowDetails, 
+    props: true 
   },
   {
     path: '/:catchAll(.*)',

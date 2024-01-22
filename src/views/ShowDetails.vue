@@ -23,6 +23,7 @@
   })
   
   const getShowPosterUrl = (posterPath) => {
+    if(posterPath === null) return `https://image.tmdb.org/t/p/w500/v9nGSRx5lFz6KEgfmgHJMSgaARC.jpg`
     return `https://image.tmdb.org/t/p/w500${posterPath}`
   }
   </script>

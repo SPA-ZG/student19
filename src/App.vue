@@ -37,7 +37,10 @@ const fetchMovies = async () => {
 }
 
 const getMoviePosterUrl = (posterPath) => {
-  return `https://image.tmdb.org/t/p/w500${posterPath}`;
+  if(posterPath === null) {
+    return `https://image.tmdb.org/t/p/w500/v9nGSRx5lFz6KEgfmgHJMSgaARC.jpg`
+  }
+  else return `https://image.tmdb.org/t/p/w500${posterPath}`;
 };
 
 provide('movies', movies)
